@@ -4,17 +4,13 @@
 	html5up.net | @ajlkn
 	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 -->
-<html lang="de">
+<html>
 	<head>
 		<title>Massively by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<style>
-			/* CSS-Stile wie im ursprünglichen Code */
-			/* ... */
-		</style>
 	</head>
 	<body class="is-preload">
 
@@ -228,65 +224,6 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
-
-		<!-- Banner Bereich -->
-		<div class="banner">
-			<!-- Überprüfe, ob der Pfad korrekt ist -->
-			<img src="banner.jpg.jpeg" alt="Banner">
-			<div class="banner-text">
-				<!-- Satz "Ihr Versicherungs-Berater" entfernt -->
-			</div>
-		</div>
-
-		<div class="content">
-			<!-- Vorstellungsbereich -->
-			<div class="intro-section">
-				<div class="intro-text">
-					<h1>Ihr persönlicher Versicherungs-Berater</h1>
-					<p>Willkommen! Ich bin Ihr KI-gestützter Versicherungsberater und stehe Ihnen bei allen Fragen rund um das Thema Versicherungen zur Seite.</p>
-					<p>Mit meiner Expertise helfe ich Ihnen dabei:</p>
-					<ul style="margin-left: 20px; margin-bottom: 15px;">
-						<li>Die passenden Versicherungen für Ihre Bedürfnisse zu finden</li>
-						<li>Komplexe Versicherungsthemen einfach zu erklären</li>
-						<li>Ihre individuellen Fragen zu beantworten</li>
-					</ul>
-					<p>Sprechen Sie mich einfach an - ich freue mich darauf, Ihnen weiterzuhelfen!</p>
-				</div>
-			</div>
-
-			<!-- D-ID Agent als Hauptattraktion -->
-			<div class="agent-section">
-				<div class="agent-container">
-					<!-- Überprüfe, ob die URL korrekt ist -->
-					<iframe
-						src="https://studio.d-id.com/agents/share?id=agt_I5dmOb_6&utm_source=copy&key=WjI5dloyeGxMVzloZFhSb01ud3hNRGN6TURnNU1qRTNNRGczTmpJd09EazFOVFE2Y0dJM1oxbHpkM1k0VDNGcmNqTkpiM0ZRTTE5Wg=="
-						allow="camera;microphone;autoplay;clipboard-write;encrypted-media;picture-in-picture">
-					</iframe>
-				</div>
-			</div>
-
-			<div class="feedback-section">
-				<h2>Ihr Feedback</h2>
-				<p>Wie war Ihre Erfahrung mit unserem KI-Berater? Ihre Meinung ist uns wichtig!</p>
-				<textarea id="feedbackText" placeholder="Schreiben Sie hier Ihr Feedback..."></textarea>
-				<button onclick="sendFeedback()">Feedback senden</button>
-				<div id="feedbackMessages"></div>
-			</div>
-		</div>
-
-		<script>
-			function sendFeedback() {
-				const feedback = document.getElementById('feedbackText').value;
-				if (feedback.trim() !== '') {
-					const feedbackMessages = document.getElementById('feedbackMessages');
-					const message = document.createElement('p');
-					message.textContent = 'Vielen Dank für Ihr Feedback!';
-					message.style.color = 'green';
-					feedbackMessages.appendChild(message);
-					document.getElementById('feedbackText').value = '';
-				}
-			}
-		</script>
 
 	</body>
 </html>
